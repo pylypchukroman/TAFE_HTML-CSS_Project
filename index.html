@@ -160,7 +160,7 @@
       <!--Team-->
       <section class="team">
         <div class="container">
-          <h2 class="section-title">Out team</h2>
+          <h2 class="section-title">Out Team</h2>
           <ul class="team__team-list">
             <li class="team-list__member">
               <img
@@ -415,119 +415,34 @@
           </ul>
         </div>
       </section>
-      <!-- Модалка -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-button-close" data-modal-close>
-            <svg class="icon-close-img">
-              <use href="./images/symbol-defs.svg#icon-close-black"></use>
-            </svg>
-          </button>
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <form class="subscribe-form">
-            <div class="main-form">
-              <div class="form-field">
-                <label class="form-field-name" for="name">Имя</label>
-                <span class="inpute-wrap">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="modal-inpute"
-                  />
-                  <svg class="modal-inpute-icon" width="18" height="18">
-                    <use
-                      href="./images/symbol-defs.svg#icon-person-black"
-                    ></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="form-field">
-                <label class="form-field-name" for="tel">Телефон</label>
-                <span class="inpute-wrap">
-                  <input type="tel" name="tel" id="tel" class="modal-inpute" />
-                  <svg class="modal-inpute-icon" width="18" height="18">
-                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="form-field">
-                <label class="form-field-name" for="mail">Почта</label>
-                <span class="inpute-wrap">
-                  <input
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    class="modal-inpute"
-                  />
-                  <svg class="modal-inpute-icon" width="18" height="18">
-                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="form-field">
-                <label class="form-field-name" for="comment">Комментарий</label>
-                <textarea
-                  name="comment"
-                  id="commen"
-                  placeholder="Введите текст"
-                  class="comment-inpute"
-                ></textarea>
-              </div>
-            </div>
-            <div class="checkbox-fild">
-              <input
-                type="checkbox"
-                class="input-check visually-hiden"
-                name="check"
-                id="check"
-              />
-              <label for="check" class="check-text">
-                <span class="custom-icon">
-                  <svg class="inpute-icon-check" width="11" height="8">
-                    <use href="./images/symbol-defs.svg#confirm-icon"></use>
-                  </svg>
-                </span>
-                Соглашаюсь с рассылкой и принимаю
-                <a href="" class="checkbox-fild-contract">
-                  Условия договора</a
-                ></label
-              >
-            </div>
-            <div class="submit-btn">
-              <button class="submit-batton" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </div>
     </main>
-    <!--Футер-->
+    <!--Footer-->
     <footer class="page-footer">
       <div class="container">
         <div class="footer-common">
           <div class="tab-position">
             <div class="addres-left">
               <a href="./index.html" class="logo"
-                >Web<span class="logo-second-color-footer">Studio</span></a
+                >TipToe<span class="logo-second-color-footer">Soles</span></a
               >
               <address class="adress-list">
-                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                <p class="address">322 Avondale Road Enfield NSW 2133</p>
                 <ul class="contacts">
                   <li class="contact-list">
-                    <a class="contacts-link" href="mailto:info@devstudio.com"
-                      >info@devstudio.com</a
+                    <a class="contacts-link" href="mailto:TipToeShoes@gmail.com"
+                      >TipToeShoes@gmail.com</a
                     >
                   </li>
                   <li class="contact-list">
-                    <a class="contacts-link" href="tel:+380961111111"
-                      >+38 096 111 11 11</a
+                    <a class="contacts-link" href="tel:0292105000"
+                      >0292105000</a
                     >
                   </li>
                 </ul>
               </address>
             </div>
             <div class="join">
-              <p class="join__txt">присоединяйтесь</p>
+              <p class="join__txt">join us</p>
               <ul class="join__social-media">
                 <li class="social-media__link">
                   <a href="" class="social-media__icon">
@@ -569,17 +484,19 @@
             </div>
           </div>
           <div class="subscribe">
-            <p class="subscribe-text">Подпишитесь на рассылку</p>
+            <p class="subscribe-text">Subscribe to Newsletter</p>
             <form name="signup_form" autocomplete="on" novalidate>
               <div class="subscription-fild">
-                <input
-                  class="subscription-form"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
+                <label>
+                  <input
+                    class="subscription-form"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
                 <button class="subscription-btn" type="submit">
-                  Подписаться
+                  Subscribe
                   <div class="icon-send">
                     <svg class="icon-send-img">
                       <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -592,7 +509,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
   </body>
 </html>
