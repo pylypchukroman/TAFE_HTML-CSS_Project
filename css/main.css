@@ -123,6 +123,8 @@ img {
 
 .header-navigation {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-open {
