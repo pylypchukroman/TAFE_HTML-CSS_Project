@@ -1966,3 +1966,31 @@ button.mob-menu-mail {
 .modal-input-no-icon {
   padding-left: 12px;
 }
+
+.modal-login .form-field,
+.modal-register .form-field {
+  height: auto;
+  min-height: 58px;
+}
+
+.field-error {
+  color: #f44336;
+  font-size: 11px;
+  margin-top: 4px;
+  display: block;
+}
+
+.input-error {
+  border-color: #f44336 !important;
+}
+
+.modal .form-field {
+  height: auto;
+  min-height: 58px;
+}
+
+.modal {
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
