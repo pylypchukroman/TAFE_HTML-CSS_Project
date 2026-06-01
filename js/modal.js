@@ -1,14 +1,15 @@
-(() => {
-    const refs = {
-        openModalBtn: document.querySelector('[data-modal-open]'),
-        closeModalBtn: document.querySelector('[data-modal-close]'),
-        modal: document.querySelector('[data-modal]'),
-    };
+document.querySelectorAll('[data-modal-open]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var id = btn.getAttribute('data-modal-open');
+        var modal = document.querySelector('[data-modal="' + id + '"]');
+        if (modal) modal.classList.remove('is-hidden');
+    });
+});
 
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-        refs.modal.classList.toggle('is-hidden');
-    }
-})();
+document.querySelectorAll('[data-modal-close]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var id = btn.getAttribute('data-modal-close');
+        var modal = document.querySelector('[data-modal="' + id + '"]');
+        if (modal) modal.classList.add('is-hidden');
+    });
+});
