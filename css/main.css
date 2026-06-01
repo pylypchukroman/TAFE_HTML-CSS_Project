@@ -668,7 +668,7 @@ img {
   background-image: url(../images/clock.svg);
 }
 
-.item-diagrama::before {
+.item-diagram::before {
   background-image: url(../images/diagram.svg);
 }
 
@@ -1233,18 +1233,18 @@ img {
   }
 }
 
-.addres-left {
+.address-left {
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  .addres-left {
+  .address-left {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .addres-left {
+  .address-left {
     text-align: left;
     width: 231px;
     margin-right: 70px;
@@ -1284,7 +1284,7 @@ img {
   font-style: normal;
 }
 
-.adress-list {
+.address-list {
   margin-top: 20px;
 }
 
@@ -1364,13 +1364,13 @@ img {
   }
 }
 
-.subscription-fild {
+.subscription-field {
   justify-content: center;
   align-items: end;
 }
 
 @media screen and (min-width: 1200px) {
-  .subscription-fild {
+  .subscription-field {
     width: 575px;
     display: flex;
   }
@@ -1707,14 +1707,14 @@ img {
   padding-left: 42px;
 }
 
-.inpute-wrap {
+.input-wrap {
   position: relative;
 }
 
-.modal-inpute {
+.modal-input {
   padding-left: 42px;
 }
-.modal-inpute-icon {
+.modal-input-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1786,7 +1786,7 @@ img {
   height: 138px;
 }
 
-.modal-inpute {
+.modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -1796,21 +1796,21 @@ img {
   padding-left: 42px;
 }
 
-.modal-inpute:focus {
+.modal-input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.modal-inpute:focus + .modal-inpute-icon {
+.modal-input:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
 
 @media screen and (min-width: 1200px) {
-  .modal-inpute {
+  .modal-input {
     width: 100%;
   }
 }
 
-.comment-inpute {
+.comment-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
@@ -1821,7 +1821,7 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-inpute::placeholder {
+.comment-input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -1829,12 +1829,12 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment-inpute:focus {
+.comment-input:focus {
   border: 1px solid var(--accent-color);
 }
 
 @media screen and (min-width: 1200px) {
-  .comment-inpute {
+  .comment-input {
     width: 100%;
   }
 }
@@ -1880,7 +1880,7 @@ img {
   border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-fild {
+.checkbox-field {
   margin-top: 20px;
 }
 
@@ -1891,7 +1891,7 @@ img {
   margin-top: 30px;
 }
 
-.submit-batton {
+.submit-button {
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
@@ -1907,11 +1907,11 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit-batton:hover {
+.submit-button:hover {
   background-color: #188ce8;
 }
 
-.checkbox-fild-contract {
+.checkbox-field-contract {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1921,13 +1921,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .checkbox-fild-contract {
+  .checkbox-field-contract {
     font-size: 14px;
     line-height: 1.71;
   }
 }
 
-.inpute-icon-check {
+.input-icon-check {
   fill: var(--primary-white);
 }
 
@@ -1936,26 +1936,14 @@ img {
   border: none;
 }
 
-.inpute-wrap {
+.input-wrap {
   position: relative;
 }
 
-.modal-inpute-icon {
+.modal-input-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.visually-hiden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
