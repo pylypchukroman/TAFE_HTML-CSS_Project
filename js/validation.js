@@ -27,6 +27,20 @@ function clearErrors(form) {
     form.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
 }
 
+const subscribeForm = document.querySelector('[name="signup_form"]');
+if (subscribeForm) {
+    subscribeForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = subscribeForm.querySelector('input[type="email"]').value.trim();
+        if (!isValidEmail(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+        alert('Thank you for subscribing!');
+        subscribeForm.reset();
+    });
+}
+
 const managerForm = document.querySelector('[data-modal="manager"] form');
 if (managerForm) {
     managerForm.addEventListener('submit', e => {
