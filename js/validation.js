@@ -27,16 +27,30 @@ function clearErrors(form) {
     form.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
 }
 
+function toast(message, isSuccess) {
+    Toastify({
+        text: message,
+        duration: 3000,
+        gravity: 'top',
+        position: 'right',
+        close: true,
+        style: {
+            background: isSuccess ? '#4caf50' : '#e53935',
+            borderRadius: '6px',
+        },
+    }).showToast();
+}
+
 const subscribeForm = document.querySelector('[name="signup_form"]');
 if (subscribeForm) {
     subscribeForm.addEventListener('submit', e => {
         e.preventDefault();
         const email = subscribeForm.querySelector('input[type="email"]').value.trim();
         if (!isValidEmail(email)) {
-            alert('Please enter a valid email address.');
+            toast('Please enter a valid email address.', false);
             return;
         }
-        alert('Thank you for subscribing!');
+        toast('Thank you for subscribing!', true);
         subscribeForm.reset();
     });
 }
@@ -71,7 +85,7 @@ if (managerForm) {
         }
 
         if (valid) {
-            alert('Thank you! We will call you back soon.');
+            toast('Thank you! We will call you back soon.', true);
             document.querySelector('[data-modal="manager"]').classList.add('is-hidden');
             managerForm.reset();
         }
@@ -98,7 +112,7 @@ if (loginForm) {
         }
 
         if (valid) {
-            alert('You have successfully logged in!');
+            toast('You have successfully logged in!', true);
             document.querySelector('[data-modal="login"]').classList.add('is-hidden');
             loginForm.reset();
         }
@@ -130,7 +144,7 @@ if (registerForm) {
         }
 
         if (valid) {
-            alert('You have successfully registered!');
+            toast('You have successfully registered!', true);
             document.querySelector('[data-modal="register"]').classList.add('is-hidden');
             registerForm.reset();
         }
