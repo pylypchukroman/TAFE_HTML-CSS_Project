@@ -36,7 +36,10 @@ function toast(message, isSuccess) {
         close: true,
         style: {
             background: isSuccess ? '#4caf50' : '#e53935',
-            borderRadius: '6px',
+            borderRadius: '8px',
+            padding: '18px 28px',
+            fontSize: '16px',
+            minWidth: '300px',
         },
     }).showToast();
 }
