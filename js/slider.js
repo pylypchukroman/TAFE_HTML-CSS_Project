@@ -20,8 +20,15 @@ if (wrapper && track && prevBtn && nextBtn) {
     let current = 1;
     let animating = false;
 
+    function visibleCount() {
+        if (window.innerWidth >= 1200) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+    }
+
     function cardWidth() {
-        return (wrapper.offsetWidth - 20) / 3;
+        const n = visibleCount();
+        return (wrapper.offsetWidth - (n - 1) * 10) / n;
     }
 
     function updateWidths() {

@@ -2004,7 +2004,7 @@ button.mob-menu-mail {
 
 .slider-track-wrapper {
   overflow: hidden;
-  width: 830px;
+  width: 270px;
   max-width: calc(100% - 120px);
   flex-shrink: 1;
 }
@@ -2044,4 +2044,16 @@ button.mob-menu-mail {
 .slider-btn:hover,
 .slider-btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-track-wrapper {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-track-wrapper {
+    width: 830px;
+  }
 }
