@@ -70,8 +70,8 @@ if (managerForm) {
         const agreed = document.getElementById('check').checked;
         let valid = true;
 
-        if (name === '') {
-            showError('name', 'Please enter your name.');
+        if (name.length < 2) {
+            showError('name', 'Name must be at least 2 characters.');
             valid = false;
         }
         if (phone === '') {
@@ -133,8 +133,8 @@ if (registerForm) {
         const password = document.getElementById('register-password').value;
         let valid = true;
 
-        if (name === '') {
-            showError('register-name', 'Please enter your name.');
+        if (name.length < 2) {
+            showError('register-name', 'Name must be at least 2 characters.');
             valid = false;
         }
         if (!isValidEmail(email)) {
